@@ -1,8 +1,7 @@
-# Complete project details at https://RandomNerdTutorials.com
 
 try:
   import usocket as socket
-except:mainma
+except:
   import socket
 
 from machine import Pin

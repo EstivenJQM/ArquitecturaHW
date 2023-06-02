@@ -54,8 +54,8 @@ def web_page():
   <table><tr><th>MEASUREMENT</th><th>VALUE</th></tr>
   <tr><td>Temp. Celsius</td><td><span class="sensor">""" + str(bme.temperature) + """</span></td></tr>
   <tr><td>Temp. Fahrenheit</td><td><span class="sensor">""" + str(round((bme.read_temperature()/100.0) * (9/5) + 32, 2))  + """F</span></td></tr>
-  <tr><td>Pressure</td><td><span class="sensor">""" + str(bme.pressure) + """</span></td></tr>
-  <tr><td>Humidity</td><td><span class="sensor">""" + str(bme.humidity) + """</span></td></tr></body></html>"""
+  <tr><td>Presion</td><td><span class="sensor">""" + str(bme.pressure) + """</span></td></tr>
+  <tr><td>Humedad</td><td><span class="sensor">""" + str(bme.humidity) + """</span></td></tr></body></html>"""
   return html
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
